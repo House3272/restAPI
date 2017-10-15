@@ -1,0 +1,274 @@
+/*CZ*/
+
+* {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+  transition:         all 0.2s ease;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: none;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #fff;
+}
+html, body, #container, h1, h2, h4, p {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #000;
+}
+a, a:visited, a:hover, a:active {
+	color: inherit;
+}
+
+
+
+#container {
+	font-size: 24px;
+	text-align: center;
+	height: 100%;
+	width: auto;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	align-content: space-around;
+	padding: 0 5%;
+}
+
+
+#header {
+	padding: 0.2em;
+}
+
+
+#meat {
+	flex-basis: 84%;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	height: 100%;
+	border-radius: 2em;
+	background-color: rgba(255,255,255,0.8);
+	color: #111;
+}
+
+
+#description {
+	width: 96%;
+	padding: 0em 0.4em;
+}
+#description hr{
+	margin: 0;
+}
+
+#viewOptions {
+	width: auto;
+	flex: 2;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+}
+
+
+#profileView, #accountsView, #transactionsView {
+	display: none;
+	width: 98%;
+	flex: 4;
+	padding: 0em 0.1em 1em;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+
+#accountsView>h4 {
+	margin-top: 0.4em;
+	margin-bottom: 0.2em;
+	font-size: 92%;
+	color: #333;
+}
+
+#accountsView>#accountOptions,
+#accountsView>.accountBlock {
+	flex:1;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 96%;
+	height: auto;
+	box-sizing: border-box;
+	font-size: 72%;
+}
+#accountsView>#accountOptions>* , 
+#accountsView>.accountBlock>* {
+	flex: 1;
+}
+#accountsView>#accountOptions>div:nth-child(2) , 
+#accountsView>.accountBlock>div:nth-child(2) {
+	flex: 3;
+}
+#accountsView>#accountOptions>div:first-child,
+#accountsView>.accountBlock>div:first-child {
+	border-left: none;
+}
+
+
+#accountsView>#accountOptions>*{
+	border-left: 2px solid black;
+	border-bottom: 1px solid black;
+}
+#accountsView>#accountOptions{
+	padding: 0.4em 0.9em;
+	margin: 0 0 0.2em;
+}
+
+
+#accountsView>.accountBlock {
+	padding: 0 1em 0.1em;
+	margin-bottom: 0.15em;
+	border: 4px solid white;
+	border-radius: 20px;
+	background-color: rgba(99,99,99,0.42);
+}
+#accountsView>.accountBlock:hover {
+	cursor: pointer;
+	border-radius: 3px;
+	color:#fff;
+	background-color: rgba(99,99,99,0.8);
+}
+#accountsView>.accountBlock>*{
+	border-left: 2px solid #444;
+}
+
+
+
+#interWrapper {
+	margin-top: 0.4em;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 100%;
+}
+#interWrapper input{
+	width: 99%;
+	line-height: 20px;
+	font-size: 16px;
+	text-align: center;
+}
+#interWrapper>div{
+	padding: 0 0.5em;
+	flex-flow: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+#interWrapper>#interOptions {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+#interOptions div,
+#interOptions button {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#interWrapper>#formControls {
+	display: none;
+	flex-flow: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+
+
+#messageArea {
+	padding-top: 2em;
+	color: #b22;
+	font-size: 92%;
+	flex: 1;
+}
+
+
+
+
+#navControls {
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	margin-top: auto;
+	width: auto;
+	padding: 0 0 0.2em;
+}
+
+
+
+
+
+
+#canvascon {
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+#zcanvas {
+	background:black;
+}
+
+
+
+
+
+#repo {
+	position: absolute;
+	bottom: 18px;
+	right: 21px;
+	width: auto;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: right;
+	z-index: 1;
+}
+#repo > a {
+	text-align: center;
+	background: rgba(192,240,254,0.92);
+	padding: 6px 23px 7px 25px;
+	border-radius: 18px;
+	color: rgba(96,36,192,0.96);
+}
+#repo >a:visited {
+	color: rgba(96,36,192,0.96);
+}
+#repo >a:hover {
+	border-radius: 3px;
+	color:#fff;
+}
+#repo >a:active {
+	color: rgba(192,128,254,0.96);
+}

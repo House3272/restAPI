@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Cesare Zhao">
+	<meta name="date" content="2016-02-29">
+	<meta name="description" content="UW iSchool Informatics 344: restAPI Challenge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<base href="https://rest.frosation.com">
+	<title>rest.Frosation.com</title>
+	<link rel="icon" href="">
+	<link rel="stylesheet" href=base.css>
+</head>
+<body>
+<div id="container">
+
+	<div id="header">
+		<h1>REST API</h1>
+	</div>
+
+	<div id="meat">
+
+		<div id="directions">
+			<h3>Authenticate to Continue</h3>
+			<hr>
+		</div>
+
+		<div id="loginOptions">
+			<div id="local">
+				<h5></h5>
+				<div><button id="localExist">Use Existing Account</button></div>
+				<div><button id="localNew" >Create New Account</button></div>
+			</div>
+		</div>
+
+
+
+
+		<div id="localExistForm">
+			<div>Username:</div>
+			<div><input name="username"></div>
+			<br>
+			<div>Password:</div>
+			<div><input type="password" name="password"></div>
+		</div>
+		<div id="localNewForm">
+			<div>
+				<span>Username:</span>
+				<input name="username">
+			</div>
+			<div>
+				<span>Email:</span>
+				<input name="email">
+			</div>
+			<div>
+				<span>Password:</span>
+				<input type="password" name="password">
+			</div>
+			<div>
+				<span>Confirm Password:</span>
+				<input type="password" name="password0">
+			</div>
+			<div>
+				<span>Favorite Color:</span>
+				<input name="color">
+			</div>
+		</div>
+
+		<div id="messageArea" hidden>
+			ello
+		</div>
+
+		<div id="formControl" hidden>
+			<div><button id="cancel">Cancel</button></div>
+			<div><button id="enter" disabled>Submit</button></div>
+		</div>
+
+	</div>
+
+
+
+</div>
+
+<div id="repo">
+	<a href="https://github.com/House3272/3.restAPI" target="_blank">GitHub Repo</a>
+</div>
+
+<script src="base.js"></script>
+</body>
+</html>

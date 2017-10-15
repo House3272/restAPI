@@ -1,0 +1,139 @@
+/*CZ*/
+* {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+  transition:         all 0.2s ease;
+}
+
+
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: none;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #fff;
+}
+html, body, #container, h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+html{
+	background-color: #000;
+}
+a, a:visited, a:hover, a:active {
+	color: inherit;
+}
+
+
+
+#container {
+	font-size: 24px;
+	text-align: center;
+	height: 100%;
+	width: auto;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	align-content: space-around;
+	padding: 0 5%;
+}
+
+
+#header {
+	padding: 0.2em;
+}
+
+
+#meat {
+	height: 100%;
+	flex-basis: 80%;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	border-radius: 2em;
+	background-color: rgba(255,255,255,0.8);
+	color: #333;
+}
+
+
+#directions {
+	padding: 0em 0.4em;
+}
+
+
+#loginOptions {
+	width: 96%;
+	flex-basis: 56%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+#local{
+	flex-basis: 36%;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}
+#loginOptions>div>div{
+	flex: 3;
+}
+
+
+#localExistForm, #localNewForm {
+	display: none;
+	width: auto;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+#messageArea {
+	padding-top: 2em;
+	color: #b22;
+	font-size: 92%;
+	flex: 1;
+}
+
+
+#formControl{
+	margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+#repo {
+	position: absolute;
+	bottom: 18px;
+	right: 21px;
+	width: auto;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: right;
+	z-index: 1;
+}
+#repo > a {
+	text-align: center;
+	background: rgba(192,240,254,0.92);
+	padding: 6px 23px 7px 25px;
+	border-radius: 18px;
+	color: rgba(96,36,192,0.96);
+}
+#repo >a:visited {color: rgba(96,36,192,0.96);}
+#repo >a:hover {
+	border-radius: 3px;
+	color:#fff;}
+#repo >a:active {color: rgba(192,128,254,0.96);}

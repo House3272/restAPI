@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Cesare Zhao">
+	<meta name="date" content="2016-02-29">
+	<meta name="description" content="UW iSchool Informatics 344: restAPI Challenge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<base href="https://rest.frosation.com">
+	<title>rest.Frosation.com</title>
+	<link rel="icon" href="">
+	<link rel="stylesheet" href=/private/private.css>
+</head>
+<body>
+<div id="container">
+
+	<div id="header">
+		<h1>REST API</h1>
+	</div>
+
+	<div id="meat">
+
+
+		<div id="description">
+			<h3>Choose a Category to Expand</h3>
+			<hr>
+		</div>
+
+		<div id="viewOptions">
+			<div><button id="profileB">My Profile</button></div>
+			<div><button id="accountsB">My Accounts</button></div>
+			<div><button id="transactionsB">My Transaction History</button></div>
+		</div>
+
+
+
+		<div id="profileView">
+			<div>profile view here</div>
+		</div>
+
+
+		<div id="accountsView">
+
+			<div id="accountOptions">
+				<div>ID</div>
+				<div>Name</div>
+				<div>Balance</div>
+			</div>
+
+
+			<h4 id='acctDefault'>Default Account:</h4>
+
+			<h4 id='acctSeconds'>Secondary Accounts:</h4>
+
+
+
+
+			<div id='interWrapper'>
+
+				<div id="interOptions">
+					<div><button id="acctAddB">Add New Account</button></div>
+					<div><button id="acctDelB">Delete Account</button></div>
+					<div><button id="transInB">Transfer Between Your Accounts</button></div>
+					<div><button id="transExB">Transfer to Another User</button></div>
+				</div>
+
+				<div id='acctAdd' hidden>
+					<input placeholder="Enter a name for this new account" name="title" autocomplete="off"></input>
+				</div>
+				<div id='acctDel' hidden>
+					<input placeholder="Enter the ID of the account to Delete" name="acctID" autocomplete="off"></input>
+				</div>
+				<div id='transIn' hidden>
+					<input placeholder="source AccountID" name="sourceID" autocomplete="off"></input>
+					<input placeholder="amount" name="amount" autocomplete="off"></input>
+					<input placeholder="target AccountID" name="targetID" autocomplete="off"></input>
+				</div>
+				<div id='transEx' hidden>
+					<input placeholder="source AccountID" name="sourceID" autocomplete="off"></input>
+					<input placeholder="amount" name="amount" autocomplete="off"></input>
+					<input placeholder="target UserName" name="targetUser" autocomplete="off"></input>
+				</div>
+
+				<div id="formControls" hidden>
+					<div><button id="cancelB">Cancel</button></div>
+					<div><button id="submitB">Submit</button></div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+
+
+		<div id="transactionsView">
+			<div>transactionsView</div>
+		</div>
+
+
+
+
+
+
+
+		<div id="messageArea">
+		</div>
+
+
+
+		<div id="navControls" hidden>
+			<div><button id="backB" disabled>Back</button></div>
+			<div><button id="logoutB">Log Out</button></div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+</div>
+
+<div id="repo">
+	<a href="https://github.com/House3272/3.restAPI" target="_blank">GitHub Repo</a>
+</div>
+<div id="canvascon">
+	<canvas id="zcanvas"></canvas>
+</div>
+
+<script src="private/private.js"></script>
+<script src="private/cutedots.js"></script>
+</body>
+</html>
