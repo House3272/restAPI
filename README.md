@@ -1,11 +1,17 @@
 # rest API using Node.js and Koa
 
-Libraries Used:
-bcrypt
-bluebird
-jsonwebtokens
-koa
-mocha
-rethinkdb
-
 Tested Restful web api via Mocha
+
+Libraries Used:  
+bcrypt   
+bluebird   
+jsonwebtokens   
+koa   
+mocha   
+rethinkdb    
+
+Services Used:    
+AWS EC2   
+RethinkDB   
+Redis   
+Nginx   
